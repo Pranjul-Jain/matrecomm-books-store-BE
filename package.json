@@ -1,0 +1,23 @@
+{
+  "name": "matricomm_books_store_be",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This is a books store",
+  "main": "app/server.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon app/server.js",
+    "dev": "nodemon app/server.js"
+  },
+  "author": "Pranjul Jain",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1",
+    "mutter": "^1.0.1",
+    "nodemon": "^3.1.2",
+    "winston": "^3.13.0"
+  }
+}
