@@ -1,27 +1,26 @@
 import mongoose from "mongoose"
 
 const booksSchema = new mongoose.Schema({
-    name: {
+    title: {
         type: String,
+        unique: true,
         required: [true, "Please Enter Book Name"]
     },
     author: {
         type: String,
+        unique: true,
         required: [true, "Please Enter Book Author"]
     },
     description: {
         type: String
     },
-    date:{
+    publishedDate:{
         type: Date,
         required: [true,"Please Enter Date"]
     },
-    ratings: {
-        type: Number
-    },
-    price: {
-        type: Number,
-        required: [true, "Please Enter Price"]
+    genre: {
+        type: String,
+        genre: [true, "Please Enter Genre"]
     },
     url: {
         type: String

@@ -1,9 +1,8 @@
 export const sort_keys = [
     "name",
     "author",
-    "date",
-    "ratings",
-    "price",
+    "published_year",
+    "genre",
 ]
 
 export const order = [

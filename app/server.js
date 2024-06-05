@@ -3,12 +3,17 @@ import logger from "../config/logger.js"
 import dotenv from "dotenv"
 import connectDb from "../config/db.js"
 import bookRoutes from "../routes/bookRoutes.js"
+import cors from "cors"
 
 // configure dotenv file
 dotenv.config();
 
 // configure express
 const app = express()
+
+app.use(cors({
+    origin:"*",
+}))
 
 app.use(express.json({
     limit:"16kb"
