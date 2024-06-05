@@ -13,13 +13,15 @@ This is a backend repo for book management full stack application , in this two 
 > 2. npm start (npm start will start the nodemon and express server , you can edit the package.json file accordingly)
 
 3. Logging
-> 1. Winston logger is used to log error and info messages in logs file to debug the error easily in deployment
+> 1. Winston logger is used to log error and info messages in logs file to debug the error easily in local and in production environment.
 
 # API DOCUMENTATION
 
 ## Add Book API
 > In this user can add book by name to mongodb database by provide name param to this api.
+
 > GOOGLE API is used in this api to fetch data according to name.
+
 > this api will filter all the rows which contains title, author , description , url , publishedDate and genre and then create and push books mongoose model to items array. then with insert many method of mongoose it will add those rows to mongodb database 
 
 ## Get Books API
